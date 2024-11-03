@@ -4,7 +4,7 @@ A chat application using Next.js and Ably's pub sub messaging feature that makes
 
 ## Live Link
 
-You can check out the app [here](link-yet-to-be-added).
+You can check out the app [here](https://serverless-chat-nextjs-ably.vercel.app/).
 
 ## Technologies Used
 
