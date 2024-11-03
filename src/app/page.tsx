@@ -1,8 +1,17 @@
+"use client";
+
+import dynamic from "next/dynamic";
+
+const Chat = dynamic(() => import("@/components/Chat"), {
+  ssr: false,
+});
+
 export default function Home() {
   return (
     <div className="container">
       <main>
         <h1 className="title">{`Let's Chat`}</h1>
+        <Chat />
       </main>
 
       <footer>
@@ -19,6 +28,7 @@ export default function Home() {
           href="https://github.com/Krishnanand2517/serverless-chat-nextjs-ably"
           className="github-corner"
           aria-label="View source on GitHub"
+          target="_blank"
         >
           <svg
             width="80"

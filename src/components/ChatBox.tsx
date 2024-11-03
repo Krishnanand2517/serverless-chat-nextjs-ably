@@ -37,11 +37,11 @@ export default function ChatBox() {
   };
 
   const handleKeyPress = (event: KeyboardEvent<HTMLTextAreaElement>) => {
-    event.preventDefault();
-
     if (event.charCode !== 13 || messageTextIsEmpty) return;
 
     if (messageText) sendChatMessage(messageText);
+
+    event.preventDefault();
   };
 
   const messages = receivedMessages.map((message, index) => {
